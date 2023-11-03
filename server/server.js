@@ -13,7 +13,7 @@ app.get("/translate", async (request, response) => {
   // destructure all the properties from request.query into variables
   const { word, from, to } = request.query;
 
-  // make our tranlation API call
+  // make our image API call
   const API_mymemory = `https://api.mymemory.translated.net/get?q=${word}&langpair=${from}|${to}`;
   const res_mymemory = await axios.get(API_mymemory);
 

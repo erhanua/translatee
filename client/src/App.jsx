@@ -34,7 +34,6 @@ function App() {
             onChange={(event) => setWord(event.target.value)}
           />
         </div>
-
         <div className="container">
           <select onChange={(event) => setTo(event.target.value)}>
             <option value="ar">Arabic</option>
